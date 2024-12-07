@@ -36,8 +36,12 @@ body {
   border-radius: 0%;
 }
 
-.text-blue {color:#2c2b5e;}
-.text-red {color: #ec1c23;}
+.text-blue {
+  color: #2c2b5e;
+}
+.text-red {
+  color: #ec1c23;
+}
 /* -------------- Header Start ------------------- */
 
 .header-top {
@@ -168,6 +172,21 @@ header img {
 /* ------------------ Welcome end---------------------- */
 
 /* --------Courses start---------------------- */
+.courses .shadow {
+  display: none;
+}
+.courses .main_picture:hover .shadow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  color: white;
+  background-color: #ec1c235f;
+}
 
 .courses .card-body {
   padding: 30px;
@@ -222,10 +241,11 @@ header img {
   top: 0;
   width: 100%;
 }
-.notice h4{
+.notice h4 {
   color: #ec1c23;
 }
 /* ----------------- Notice end ------------------ */
+/*---------------Hero start---------- */
 
 .hero-area.two {
   position: relative;
@@ -246,9 +266,32 @@ header img {
   background: rgba(44, 43, 94, 0.92);
 }
 
+/*---------------Hero end---------- */
+
+/*---------------BLOG START---------- */
+
+.blog .shadow {
+  display: none;
+}
+.blog .main_picture:hover .shadow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  color: white;
+  background-color: #ec1c235f;
+}
+
+/*---------------BLOG end---------- */
+
 .subscribe {
   background: whitesmoke;
 }
+
 .copyright {
   background: rgba(44, 43, 94, 0.92);
 }
@@ -271,15 +314,43 @@ header img {
   background: #fff;
   text-decoration: none;
   transition: 0.2s;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
   font-weight: normal;
 }
 .events .Button:hover {
   color: #fff;
-  background:  #ec1c23;
+  background: #ec1c23;
   text-decoration: none;
 }
 /* -------events end-------*/
+
+.navigation h3 {
+   font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  color: #606060;
+}
+
+.navigation h3::before {
+  background: #606060;
+  bottom: -13px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 45px;
+}
+
+.navigation h3::after {
+  background: #606060;
+  bottom: -10px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 57px;
+}
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -291,7 +362,6 @@ header img {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background:  #ec1c23;
+  background: #ec1c23;
   border-radius: 5px;
 }
-
