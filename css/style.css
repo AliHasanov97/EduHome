@@ -1,11 +1,44 @@
 body {
   margin: 0px;
+  font-family: "Open Sans", sans-serif !important;
 }
 
 .hide {
   height: 60px;
   overflow: hidden;
 }
+
+.Button {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 25px 9px;
+  text-transform: uppercase;
+  background: #ec1c23;
+  text-decoration: none;
+  transition: 0.2s;
+  border: none;
+}
+.slider .Button:hover {
+  color: #ec1c23;
+  background: #fff;
+  text-decoration: none;
+}
+
+.Button:hover {
+  color: white;
+  background: #2c2b5e;
+  text-decoration: none;
+}
+
+.card {
+  border-radius: 0%;
+}
+
+.text-blue {color:#2c2b5e;}
+.text-red {color: #ec1c23;}
+/* -------------- Header Start ------------------- */
 
 .header-top {
   background-color: #ec1c23;
@@ -47,14 +80,73 @@ body {
   position: absolute;
 }
 
-.about-img {
+.nav-link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+header img {
+  padding: 40px 0 33px;
+}
+
+/* -------------- Header End ------------------- */
+
+/* -------------- Carusel start ------------------- */
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.carousel-caption h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 58px;
+}
+
+.carousel-caption p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* ------------------ carousel end---------------------- */
+
+/* -------------------About start---------------------- */
+
+.about .card-body {
+  padding: 40px;
+}
+.about .nav-link:hover {
+  color: #ec1c23;
+}
+
+/* ------------------ About end---------------------- */
+/* ------------------ Welcome start---------------------- */
+
+.welcome span {
+  color: #ec1c23;
+}
+.welcome .about-img {
   position: relative;
   z-index: 1;
   margin-right: -30px;
   padding: 0 20px;
 }
 
-.about-img:after {
+.welcome .about-img:after {
   position: absolute;
   border: 10px solid #ebebeb;
   left: 0;
@@ -63,6 +155,17 @@ body {
   content: "";
   height: 88%;
   z-index: -1;
+}
+
+/* ------------------ Welcome end---------------------- */
+
+/* --------Courses start---------------------- */
+
+.courses .card-body {
+  padding: 30px;
+}
+.courses .nav-link:hover {
+  color: #ec1c23;
 }
 
 .courses-area.two {
@@ -83,6 +186,15 @@ body {
   content: "";
   background: rgba(44, 43, 94, 0.92);
 }
+/* ----------------- courses end ------------------ */
+
+/* ----------------- Notice start ------------------ */
+.notice h3 {
+  color: #2c2b5e;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
 
 .notice-video {
   background: rgba(0, 0, 0, 0) url(/image/video.webp) repeat scroll 0 0;
@@ -102,6 +214,10 @@ body {
   top: 0;
   width: 100%;
 }
+.notice h4{
+  color: #ec1c23;
+}
+/* ----------------- Notice end ------------------ */
 
 .hero-area.two {
   position: relative;
@@ -129,23 +245,7 @@ body {
   background: rgba(44, 43, 94, 0.92);
 }
 
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  color: #fff;
-  text-align: center;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-
-.carousel-item img {
-  height: 100vh;
-object-fit: cover;
-}
-
-.shadow{
+.shadow {
   background-color: black;
   opacity: 0.7;
   width: 100%;
@@ -171,10 +271,7 @@ object-fit: cover;
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background:  #ec1c23;
+  border-radius: 5px;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
