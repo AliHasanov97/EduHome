@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+
 body {
   margin: 0px;
   font-family: "Open Sans", sans-serif !important;
@@ -43,7 +45,6 @@ body {
   color: #ec1c23;
 }
 /* -------------- Header Start ------------------- */
-
 .header-top {
   background-color: #ec1c23;
   position: relative;
@@ -94,7 +95,69 @@ header img {
   padding: 40px 0 33px;
 }
 
+.new-header {
+  position: fixed;
+  width: -webkit-fill-available;
+  z-index: 2;
+  height: 60px;
+  background: #ffffffbc;
+  top: 0;
+}
+
+.new-header img {
+  padding: 0px;
+}
 /* -------------- Header End ------------------- */
+
+/* ---------------title start----------------- */
+
+.title {
+  background-color: #333333;
+}
+.title .container {
+  padding: 140px;
+}
+/* ---------------title end----------------- */
+/* -------------- teacher start ------------------- */
+
+.teachers h2:hover {
+  color: #ec1c23;
+}
+
+.teachers img {
+  width: 100%;
+}
+.teachers .card {
+  height: 375px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.teachers .card-body {
+  position: absolute;
+  width: -webkit-fill-available;
+  top: 75%;
+  background-color: white;
+  transition: 0.4s;
+}
+.teachers .card:hover .card-body {
+  top: 60%;
+}
+.teachers .shadow {
+  transition: 0.4s;
+}
+.teachers .card:hover .shadow {
+  position: absolute;
+  top: 0%;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  background-color: rgba(255, 255, 255, 0.511);
+}
+.teachers .list-group-item:hover {
+  background-color: #ec1c23;
+  color: white;
+}
+
+/* -------------- teacher end ------------------- */
 
 /* -------------- Carusel start ------------------- */
 
@@ -172,6 +235,64 @@ header img {
 /* ------------------ Welcome end---------------------- */
 
 /* --------Courses start---------------------- */
+
+.courses .main_picture .time {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  background-color: rgba(21, 19, 137, 0.645);
+  padding: 10px;
+  color: white;
+  z-index: 5;
+}
+
+.course-title h3 {
+  background: #2c2b5e;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: "Open Sans", sans-serif;
+  padding: 16px 93px 16px 27px;
+  display: inline-block;
+  position: relative;
+}
+.course-title h3::after {
+  background: #fff none repeat scroll 0 0;
+  content: "";
+  height: 85px;
+  position: absolute;
+  right: -26px;
+  top: -17px;
+  transform: rotate(-30deg);
+  width: 45px;
+}
+.course-form form {
+  position: relative;
+  margin-bottom: 50px;
+}
+.course-form form input {
+  width: 100%;
+  border: 1px solid #ebebeb;
+  background: #f8f8f8;
+  padding: 14px 195px 14px 25px;
+}
+.course-form form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #ec1c23;
+  color: #fff;
+  height: 50px;
+  width: 185px;
+  content: "";
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
 .courses .shadow {
   display: none;
 }
@@ -325,10 +446,10 @@ header img {
 /* -------events end-------*/
 
 .navigation h3 {
-   font-size: 20px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #606060;
 }
 
@@ -352,16 +473,39 @@ header img {
   width: 57px;
 }
 
-::-webkit-scrollbar {
+.notice .card::-webkit-scrollbar {
   width: 10px;
 }
 /* Track */
-::-webkit-scrollbar-track {
+.notice .card::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+.notice .card::-webkit-scrollbar-thumb {
   background: #ec1c23;
   border-radius: 5px;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+  color: #fff;
+}
+
+.concact .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logos {
+  border: 1px solid #e3e3e3;
+  border-radius: 50%;
+  height: 50px;
+  text-align: center;
+  width: 50px;
+  font-size: 25px;
+  line-height: 50px;  
+  color: rgba(0, 0, 255, 0.558);
 }
