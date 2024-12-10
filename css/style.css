@@ -69,7 +69,6 @@ body {
   transition: 0.8s;
 }
 
-
 .blue {
   background: #2c2b5e;
   content: "";
@@ -90,15 +89,75 @@ body {
   position: absolute;
 }
 
-.nav-link {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  text-decoration: none;
+.mobile-menu:hover .mobile-collapse {
+  opacity: 1;
+  visibility: visible;
 }
 
-header img {
-  padding: 40px 0 33px;
+.mobile-collapse {
+  background: #ffffff none repeat scroll 0 0;
+  right: 0;
+  opacity: 1;
+  padding: 5px 9px;
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  visibility: hidden;
+  width: max-content;
+  z-index: 999;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
 }
+
+.search , .mobile-menu{line-height: 100px;}
+
+.search:hover > .search-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.search-menu {
+  background: #ffffff none repeat scroll 0 0;
+  right: 0;
+  opacity: 0;
+  padding: 5px 9px;
+  position: absolute;
+  text-align: left;
+  top: 79px;
+  visibility: hidden;
+  width: max-content;
+  z-index: 999;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+  list-style-type: none;
+}
+
+.sub-menu {
+  background: #ffffff none repeat scroll 0 0;
+  left: 0;
+  opacity: 0;
+  padding: 5px 9px;
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  visibility: hidden;
+  width: 185px;
+  z-index: 999;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+  list-style-type: none;
+}
+
+.sub-menu li a {
+  transition: 0.8s;
+}
+.sub-menu li a:hover {
+  padding-left: 30px;
+  color: red;
+}
+
+.list-group-item ul li:hover > .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 .new-header {
   position: fixed;
@@ -110,8 +169,33 @@ header img {
   transition: 0.8s;
 }
 
-.bg-blue{background: #2c2b5e;}
-.bg-red{background-color: #ec1c23;}
+.header-bottom .nav .nav-item {
+  height: 100%;
+  position: relative;
+  line-height: 100px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+.header-bottom .nav-item:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sub-menu .nav-link{
+line-height:normal
+}
+
+.bg-blue {
+  background: #2c2b5e;
+}
+.bg-red {
+  background-color: #ec1c23;
+}
 
 .new-header img {
   padding: 0px;
@@ -515,6 +599,6 @@ header img {
   text-align: center;
   width: 50px;
   font-size: 25px;
-  line-height: 50px;  
+  line-height: 50px;
   color: rgba(0, 0, 255, 0.558);
 }

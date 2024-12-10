@@ -24,12 +24,12 @@
         <div class="container">
           <div class="row hide">
             <div
-              class="col-12 col-lg-8 d-flex align-items-center text-light z-1 bg-blue"
+              class="col-12 col-lg-8 d-flex align-items-center text-light z-1 bg-red"
             >
               HAVE ANY QUESTION ? +880 5698 598 6587
             </div>
             <div
-              class="col-12 col-lg-4 d-flex align-items-center justify-content-center text-light position-relative z-1 bg-red"
+              class="col-12 col-lg-4 d-flex align-items-center justify-content-end text-light position-relative z-1 bg-blue"
             >
               <div class="blue d-none d-lg-flex">
                 <div class="white"></div>
@@ -44,32 +44,120 @@
       </div>
 
       <div class="header-bottom">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12 col-lg-3">
-              <img src="image/logo2.webp" alt="" />
-            </div>
+        <div class="container d-flex h-100 align-items-center flex-wrap">
+          <div class="col-9 col-lg-3 d-flex align-items-center h-100">
+            <img src="image/logo2.webp" style="padding: 20px 0;" alt="" />
+          </div>
+
+          <div
+            class="col-3 col-lg-9 navigation align-items-center h-100 justify-content-end d-flex"
+          >
+            <ul class="nav align-items-center p-0 h-100 d-none d-lg-flex">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Courses</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a class="nav-link fs-6 fw-normal" href="courses.html"
+                      >Courses</a
+                    >
+                  </li>
+                  <li>
+                    <a class="nav-link fs-6 fw-normal" href=""
+                      >Courses details</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Event</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a class="nav-link fs-6 fw-normal" href="event.html"
+                      >Event</a
+                    >
+                  </li>
+                  <li>
+                    <a class="nav-link fs-6 fw-normal" href="#"
+                      >Event details</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Teacher</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a class="nav-link fs-6 fw-normal" href="teacher.html"
+                      >Teacher</a
+                    >
+                  </li>
+                  <li>
+                    <a class="nav-link fs-6 fw-normal" href="#"
+                      >Teacher details</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a class="nav-link fs-6 fw-normal" href="blog.html">Blog</a>
+                  </li>
+                  <li>
+                    <a class="nav-link fs-6 fw-normal" href="#">Blog details</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
             <div
-              class="col-12 col-lg-8 navigation d-flex d-none d-lg-flex flex-row justify-content-around"
+              class="search position-relative h-100 d-flex align-items-center ms-5"
             >
-              <a class="nav-link" href="index.html">Home</a>
-
-              <a class="nav-link" href="about.html">About</a>
-
-              <a class="nav-link" href="courses.html">Courses</a>
-
-              <a class="nav-link" href="event.html">Event</a>
-
-              <a class="nav-link" href="teacher.html">Teacher</a>
-
-              <a class="nav-link" href="blog.html">Blog</a>
-
-              <a class="nav-link" href="contact.html">Contact</a>
-            </div>
-            <div class="col-12 col-lg-1">
               <i
                 class="fas fa-search rounded-circle bg-primary text-light p-2"
               ></i>
+              <div class="search-menu d-flex">
+                <input
+                  class="form-control rounded-0"
+                  placeholder="search"
+                  type="text w-50"
+                />
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+
+            <div
+              class="mobile-menu position-relative h-100 d-flex d-lg-none align-items-center ms-2"
+            >
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Some placeholder content for the collapse component. This panel
+                is hidden by default but revealed when the user activates the
+                relevant trigger.
+              </div>
             </div>
           </div>
         </div>
@@ -552,7 +640,10 @@
                 </div>
                 <div class="card-body">
                   <p class="card-subtitle text-muted">
-                    By Alex / June 20, 2022 /<i class="fa-regular fa-comments"></i> 4
+                    By Alex / June 20, 2022 /<i
+                      class="fa-regular fa-comments"
+                    ></i>
+                    4
                   </p>
                   <hr />
                   <p class="fs-5 fw-bold">
@@ -578,7 +669,10 @@
                 </div>
                 <div class="card-body">
                   <p class="card-subtitle text-muted">
-                    By Alex / June 20, 2022 /<i class="fa-regular fa-comments"></i> 4
+                    By Alex / June 20, 2022 /<i
+                      class="fa-regular fa-comments"
+                    ></i>
+                    4
                   </p>
                   <hr />
                   <p class="fs-5 fw-bold">
@@ -605,7 +699,10 @@
                 </div>
                 <div class="card-body">
                   <p class="card-subtitle text-muted">
-                    By Alex / June 20, 2022 /<i class="fa-regular fa-comments"></i> 4
+                    By Alex / June 20, 2022 /<i
+                      class="fa-regular fa-comments"
+                    ></i>
+                    4
                   </p>
                   <hr />
                   <p class="fs-5 fw-bold">
@@ -728,7 +825,7 @@
       </section>
     </footer>
     <script src="js/bootstrap.min.js"></script>
-   <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
