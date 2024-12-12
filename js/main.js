@@ -4,7 +4,8 @@ windows.on("scroll", function () {
   var scroll = windows.scrollTop();
   if (scroll < 5) {
     stick.removeClass("new-header");
-  } else {
+    
+      } else {
     stick.addClass("new-header");
   }
 });
